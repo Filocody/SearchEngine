@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.h
+vector
+-
+string
+-
+map
+-
+
+C:/Users/stigi/CLionProjects/search_engine/converterJSON.h
+vector
+-
+string
+-
+
+C:/Users/stigi/CLionProjects/search_engine/main.cpp
+iostream
+-
+converterJSON.h
+C:/Users/stigi/CLionProjects/search_engine/converterJSON.h
+InvertedIndex.h
+C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.h
+
