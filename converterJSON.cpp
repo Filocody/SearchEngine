@@ -4,12 +4,18 @@
 
 #include "converterJSON.h"
 
-std::vector<std::string> ConverterJSON::GetRequests()
+std::vector<std::string> ConverterJSON::GetConfigs()
 {
+    std::vector<std::string> configs;
+    nlohmann::json dict;
+    std::ifstream file("config.json");
+    file >> dict;
+    configs.push_back(dict["config"]["name"]);
+
 
 }
 
-std::vector<std::string> ConverterJSON::GetTextDocs()
+std::vector<std::string> ConverterJSON::GetRequests()
 {
 
 }

@@ -7,14 +7,15 @@
 
 #include <vector>
 #include <string>
-
+#include "nlohmann/json.hpp"
+#include <fstream>
 
 class ConverterJSON
 {
 public:
     ConverterJSON() = default;
 
-    std::vector<std::string> GetTextDocs();
+    std::vector<std::string> GetConfigs();
     std::vector<std::string> GetRequests();
     int GetResponseLimits();
     void PutAnswers(std::vector<std::vector<std::pair<int, float>>> answers);

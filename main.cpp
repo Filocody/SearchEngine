@@ -18,7 +18,7 @@ int main() {
         std::cout <<it.first << " ";
         for (auto& count : it.second)
         {
-            std::cout << count.doc_id <<" " << count.count <<" ";
+            std::cout <<"{" << count.doc_id <<", " << count.count <<"} ";
         }
         std::cout << std::endl;
     }
