@@ -40,10 +40,12 @@ std::vector<Entry> InvertedIndex::GetWordCount(const std::string &word)
             Entry entry{doc_id, count};
             word_count.push_back(entry);
         }
+
         doc_id++;
     }
 
+
     freq_dictionary.insert(std::pair<std::string, std::vector<Entry>>(word, word_count));
 
-    return word_count;
+    return word_count.empty() ? std::vector<Entry>{{}} : word_count;
 }

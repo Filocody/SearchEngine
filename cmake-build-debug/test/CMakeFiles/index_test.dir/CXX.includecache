@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.cpp
+InvertedIndex.h
+C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.h
+sstream
+-
+
+C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.h
+vector
+-
+string
+-
+map
+-
+

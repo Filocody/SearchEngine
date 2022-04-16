@@ -2,28 +2,19 @@
 #include "converterJSON.h"
 #include "InvertedIndex.h"
 
+
+
 int main() {
-    std::vector<std::string> str = {{"milk salt cat"}, {"john kits walk"}, {"milk milk a b milk d"}};
-    std::vector<Entry> word_count;
-    std::vector<std::string> words = {"milk", "salt"};
-    InvertedIndex idx;
-    idx.UpdateDocumentBase(str);
-    //
-    for (auto& word : words) {
-        word_count = idx.GetWordCount(word);
-    }
 
-    for (auto& it : idx.freq_dictionary)
-    {
-        std::cout <<it.first << " ";
-        for (auto& count : it.second)
-        {
-            std::cout <<"{" << count.doc_id <<", " << count.count <<"} ";
-        }
-        std::cout << std::endl;
-    }
+    auto* converter = new ConverterJSON;
+    std::vector<std::vector<std::pair<int, float>>> answers = {
+            {{2,0.99},{1, 0.85},{3, 0.74}},
+            {{1, 0.53},{3, 0.22}},
+            {{}},
+            {{3, 0.12}}
+    };
 
-
+    converter->PutAnswers(answers);
 
     return 0;
 }
