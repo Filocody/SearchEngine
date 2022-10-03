@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine
+CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine(1)
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/search_engine.dir/depend.make
@@ -78,50 +78,65 @@ include CMakeFiles/search_engine.dir/flags.make
 CMakeFiles/search_engine.dir/main.cpp.obj: CMakeFiles/search_engine.dir/flags.make
 CMakeFiles/search_engine.dir/main.cpp.obj: CMakeFiles/search_engine.dir/includes_CXX.rsp
 CMakeFiles/search_engine.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/search_engine.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\main.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/search_engine.dir/main.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\main.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\main.cpp
 
 CMakeFiles/search_engine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\main.cpp > CMakeFiles\search_engine.dir\main.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\main.cpp > CMakeFiles\search_engine.dir\main.cpp.i
 
 CMakeFiles/search_engine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\main.cpp -o CMakeFiles\search_engine.dir\main.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\main.cpp -o CMakeFiles\search_engine.dir\main.cpp.s
 
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: CMakeFiles/search_engine.dir/flags.make
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: CMakeFiles/search_engine.dir/includes_CXX.rsp
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: ../converterJSON.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\converterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\converterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp
 
 CMakeFiles/search_engine.dir/converterJSON.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/converterJSON.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp > CMakeFiles\search_engine.dir\converterJSON.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp > CMakeFiles\search_engine.dir\converterJSON.cpp.i
 
 CMakeFiles/search_engine.dir/converterJSON.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/converterJSON.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp -o CMakeFiles\search_engine.dir\converterJSON.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp -o CMakeFiles\search_engine.dir\converterJSON.cpp.s
 
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: CMakeFiles/search_engine.dir/flags.make
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: CMakeFiles/search_engine.dir/includes_CXX.rsp
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: ../InvertedIndex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\InvertedIndex.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\InvertedIndex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\InvertedIndex.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\InvertedIndex.cpp
 
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/InvertedIndex.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\InvertedIndex.cpp > CMakeFiles\search_engine.dir\InvertedIndex.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\InvertedIndex.cpp > CMakeFiles\search_engine.dir\InvertedIndex.cpp.i
 
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/InvertedIndex.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\InvertedIndex.cpp -o CMakeFiles\search_engine.dir\InvertedIndex.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\InvertedIndex.cpp -o CMakeFiles\search_engine.dir\InvertedIndex.cpp.s
+
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: CMakeFiles/search_engine.dir/flags.make
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: CMakeFiles/search_engine.dir/includes_CXX.rsp
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: ../SearchServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/search_engine.dir/SearchServer.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\search_engine.dir\SearchServer.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\SearchServer.cpp
+
+CMakeFiles/search_engine.dir/SearchServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/search_engine.dir/SearchServer.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\SearchServer.cpp > CMakeFiles\search_engine.dir\SearchServer.cpp.i
+
+CMakeFiles/search_engine.dir/SearchServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/search_engine.dir/SearchServer.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\SearchServer.cpp -o CMakeFiles\search_engine.dir\SearchServer.cpp.s
 
 # Object files for target search_engine
 search_engine_OBJECTS = \
 "CMakeFiles/search_engine.dir/main.cpp.obj" \
 "CMakeFiles/search_engine.dir/converterJSON.cpp.obj" \
-"CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj"
+"CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj" \
+"CMakeFiles/search_engine.dir/SearchServer.cpp.obj"
 
 # External object files for target search_engine
 search_engine_EXTERNAL_OBJECTS =
@@ -129,11 +144,12 @@ search_engine_EXTERNAL_OBJECTS =
 search_engine.exe: CMakeFiles/search_engine.dir/main.cpp.obj
 search_engine.exe: CMakeFiles/search_engine.dir/converterJSON.cpp.obj
 search_engine.exe: CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj
+search_engine.exe: CMakeFiles/search_engine.dir/SearchServer.cpp.obj
 search_engine.exe: CMakeFiles/search_engine.dir/build.make
 search_engine.exe: CMakeFiles/search_engine.dir/linklibs.rsp
 search_engine.exe: CMakeFiles/search_engine.dir/objects1.rsp
 search_engine.exe: CMakeFiles/search_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable search_engine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable search_engine.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\search_engine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +162,6 @@ CMakeFiles/search_engine.dir/clean:
 .PHONY : CMakeFiles/search_engine.dir/clean
 
 CMakeFiles/search_engine.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine C:\Users\stigi\CLionProjects\search_engine C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles\search_engine.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine(1) C:\Users\stigi\CLionProjects\search_engine(1) C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles\search_engine.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/search_engine.dir/depend
 

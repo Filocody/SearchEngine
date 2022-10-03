@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine
+CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine(1)
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/hello_test.dir/depend.make
@@ -78,16 +78,16 @@ include test/CMakeFiles/hello_test.dir/flags.make
 test/CMakeFiles/hello_test.dir/test_test.cpp.obj: test/CMakeFiles/hello_test.dir/flags.make
 test/CMakeFiles/hello_test.dir/test_test.cpp.obj: test/CMakeFiles/hello_test.dir/includes_CXX.rsp
 test/CMakeFiles/hello_test.dir/test_test.cpp.obj: ../test/test_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/hello_test.dir/test_test.cpp.obj"
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\hello_test.dir\test_test.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\test\test_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/hello_test.dir/test_test.cpp.obj"
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\hello_test.dir\test_test.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\test\test_test.cpp
 
 test/CMakeFiles/hello_test.dir/test_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test_test.cpp.i"
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\test\test_test.cpp > CMakeFiles\hello_test.dir\test_test.cpp.i
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\test\test_test.cpp > CMakeFiles\hello_test.dir\test_test.cpp.i
 
 test/CMakeFiles/hello_test.dir/test_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test_test.cpp.s"
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\test\test_test.cpp -o CMakeFiles\hello_test.dir\test_test.cpp.s
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\test\test_test.cpp -o CMakeFiles\hello_test.dir\test_test.cpp.s
 
 # Object files for target hello_test
 hello_test_OBJECTS = \
@@ -98,15 +98,12 @@ hello_test_EXTERNAL_OBJECTS =
 
 test/hello_test.exe: test/CMakeFiles/hello_test.dir/test_test.cpp.obj
 test/hello_test.exe: test/CMakeFiles/hello_test.dir/build.make
-test/hello_test.exe: lib/libgtestd.a
-test/hello_test.exe: lib/libgtest_maind.a
-test/hello_test.exe: lib/libgtestd.a
 test/hello_test.exe: test/CMakeFiles/hello_test.dir/linklibs.rsp
 test/hello_test.exe: test/CMakeFiles/hello_test.dir/objects1.rsp
 test/hello_test.exe: test/CMakeFiles/hello_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_test.exe"
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\hello_test.dir\link.txt --verbose=$(VERBOSE)
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=hello_test -D TEST_EXECUTABLE=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/test/hello_test.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=hello_test_TESTS -D CTEST_FILE=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/test/hello_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2021.1.2/bin/cmake/win/share/cmake-3.19/Modules/GoogleTestAddTests.cmake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_test.exe"
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\hello_test.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=hello_test -D TEST_EXECUTABLE=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/test/hello_test.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=hello_test_TESTS -D CTEST_FILE=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/test/hello_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2021.1.2/bin/cmake/win/share/cmake-3.19/Modules/GoogleTestAddTests.cmake"
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/hello_test.dir/build: test/hello_test.exe
@@ -114,10 +111,10 @@ test/CMakeFiles/hello_test.dir/build: test/hello_test.exe
 .PHONY : test/CMakeFiles/hello_test.dir/build
 
 test/CMakeFiles/hello_test.dir/clean:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test && $(CMAKE_COMMAND) -P CMakeFiles\hello_test.dir\cmake_clean.cmake
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test && $(CMAKE_COMMAND) -P CMakeFiles\hello_test.dir\cmake_clean.cmake
 .PHONY : test/CMakeFiles/hello_test.dir/clean
 
 test/CMakeFiles/hello_test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine C:\Users\stigi\CLionProjects\search_engine\test C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test\CMakeFiles\hello_test.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine(1) C:\Users\stigi\CLionProjects\search_engine(1)\test C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test\CMakeFiles\hello_test.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/hello_test.dir/depend
 

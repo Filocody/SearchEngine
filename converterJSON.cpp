@@ -13,8 +13,9 @@ std::vector<std::string> ConverterJSON::GetTextDocuments() // getting texts from
     for (auto& file : dict["files"]) //"/resources/file001.txt"
     {
         std::string path = "..";
-        path+=file;
+        path += file;
         std::ifstream t_file(path);
+        assert(t_file.is_open());
         std::stringstream buffer;
         buffer << t_file.rdbuf();
         texts.push_back(buffer.str());
@@ -45,7 +46,7 @@ int ConverterJSON::GetResponseLimits() // getting number of responses from confi
     return dict["config"]["max_responses"];
 }
 
-void ConverterJSON::PutAnswers(std::vector<std::vector<std::pair<int, float>>> answers)
+void ConverterJSON::PutAnswers(std::vector<std::vector<std::pair<size_t, float>>>& answers)
 {
     nlohmann::ordered_json result;
     int i = 1;
@@ -60,12 +61,12 @@ void ConverterJSON::PutAnswers(std::vector<std::vector<std::pair<int, float>>> a
         if (answer.capacity() > 1) {
             int j = 0;
             for (auto &it : answer) {
-                result["answers"][str]["relevance"][j].emplace("docid", it.first);
+                result["answers"][str]["relevance"][j].emplace("doc_id", it.first);
                 result["answers"][str]["relevance"][j].emplace("rank", it.second);
                 ++j;
             }
         } else if (!answer.empty()) {
-            result["answers"][str]["docid"] = answer[0].first;
+            result["answers"][str]["doc_id"] = answer[0].first;
             result["answers"][str]["rank"] = answer[0].second;
         }
         ++i;

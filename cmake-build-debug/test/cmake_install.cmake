@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/stigi/CLionProjects/search_engine/test
+# Install script for directory: C:/Users/stigi/CLionProjects/search_engine(1)/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

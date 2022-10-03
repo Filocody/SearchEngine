@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine
+CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine(1)
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/converter_test.dir/depend.make
@@ -78,30 +78,30 @@ include CMakeFiles/converter_test.dir/flags.make
 CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj: CMakeFiles/converter_test.dir/flags.make
 CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj: CMakeFiles/converter_test.dir/includes_CXX.rsp
 CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj: ../TestConverterJSON.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\converter_test.dir\TestConverterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\TestConverterJSON.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\converter_test.dir\TestConverterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\TestConverterJSON.cpp
 
 CMakeFiles/converter_test.dir/TestConverterJSON.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter_test.dir/TestConverterJSON.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\TestConverterJSON.cpp > CMakeFiles\converter_test.dir\TestConverterJSON.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\TestConverterJSON.cpp > CMakeFiles\converter_test.dir\TestConverterJSON.cpp.i
 
 CMakeFiles/converter_test.dir/TestConverterJSON.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter_test.dir/TestConverterJSON.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\TestConverterJSON.cpp -o CMakeFiles\converter_test.dir\TestConverterJSON.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\TestConverterJSON.cpp -o CMakeFiles\converter_test.dir\TestConverterJSON.cpp.s
 
 CMakeFiles/converter_test.dir/converterJSON.cpp.obj: CMakeFiles/converter_test.dir/flags.make
 CMakeFiles/converter_test.dir/converterJSON.cpp.obj: CMakeFiles/converter_test.dir/includes_CXX.rsp
 CMakeFiles/converter_test.dir/converterJSON.cpp.obj: ../converterJSON.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/converter_test.dir/converterJSON.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\converter_test.dir\converterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/converter_test.dir/converterJSON.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\converter_test.dir\converterJSON.cpp.obj -c C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp
 
 CMakeFiles/converter_test.dir/converterJSON.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter_test.dir/converterJSON.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp > CMakeFiles\converter_test.dir\converterJSON.cpp.i
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp > CMakeFiles\converter_test.dir\converterJSON.cpp.i
 
 CMakeFiles/converter_test.dir/converterJSON.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter_test.dir/converterJSON.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine\converterJSON.cpp -o CMakeFiles\converter_test.dir\converterJSON.cpp.s
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\stigi\CLionProjects\search_engine(1)\converterJSON.cpp -o CMakeFiles\converter_test.dir\converterJSON.cpp.s
 
 # Object files for target converter_test
 converter_test_OBJECTS = \
@@ -114,15 +114,12 @@ converter_test_EXTERNAL_OBJECTS =
 converter_test.exe: CMakeFiles/converter_test.dir/TestConverterJSON.cpp.obj
 converter_test.exe: CMakeFiles/converter_test.dir/converterJSON.cpp.obj
 converter_test.exe: CMakeFiles/converter_test.dir/build.make
-converter_test.exe: lib/libgtestd.a
-converter_test.exe: lib/libgtest_maind.a
-converter_test.exe: lib/libgtestd.a
 converter_test.exe: CMakeFiles/converter_test.dir/linklibs.rsp
 converter_test.exe: CMakeFiles/converter_test.dir/objects1.rsp
 converter_test.exe: CMakeFiles/converter_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable converter_test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable converter_test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\converter_test.dir\link.txt --verbose=$(VERBOSE)
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=converter_test -D TEST_EXECUTABLE=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=converter_test_TESTS -D CTEST_FILE=C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2021.1.2/bin/cmake/win/share/cmake-3.19/Modules/GoogleTestAddTests.cmake"
+	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -D TEST_TARGET=converter_test -D TEST_EXECUTABLE=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/converter_test.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=converter_test_TESTS -D CTEST_FILE=C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/converter_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2021.1.2/bin/cmake/win/share/cmake-3.19/Modules/GoogleTestAddTests.cmake"
 
 # Rule to build all files generated by this target.
 CMakeFiles/converter_test.dir/build: converter_test.exe
@@ -134,6 +131,6 @@ CMakeFiles/converter_test.dir/clean:
 .PHONY : CMakeFiles/converter_test.dir/clean
 
 CMakeFiles/converter_test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine C:\Users\stigi\CLionProjects\search_engine C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles\converter_test.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\stigi\CLionProjects\search_engine(1) C:\Users\stigi\CLionProjects\search_engine(1) C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles\converter_test.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/converter_test.dir/depend
 

@@ -1,1 +1,1 @@
--IC:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-src/googletest/include -IC:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-src/googletest -IC:/Users/stigi/CLionProjects/search_engine/nlohmann_json/single_include
+-I/include -IC:/Users/stigi/CLionProjects/search_engine(1)/nlohmann_json/single_include

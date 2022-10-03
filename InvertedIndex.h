@@ -8,7 +8,12 @@
 
 #include <vector>
 #include <string>
+#include <cstring>
+#include <sstream>
 #include <map>
+#include <algorithm>
+#include <thread>
+#include <mutex>
 
 struct Entry
 {
@@ -22,11 +27,10 @@ struct Entry
 class InvertedIndex
 {
 public:
-
     InvertedIndex() = default;
 
     void UpdateDocumentBase(std::vector<std::string> input_docs); //update and fill documents
-
+    static std::vector<std::string> GetWords (const std::string& input); // break string into separate words
     std::vector<Entry> GetWordCount(const std::string& word); // count
 
 public:

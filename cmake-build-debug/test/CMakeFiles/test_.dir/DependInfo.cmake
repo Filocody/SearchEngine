@@ -4,20 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/stigi/CLionProjects/search_engine/test/test.cpp" "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/test/CMakeFiles/test_.dir/test.cpp.obj"
+  "C:/Users/stigi/CLionProjects/search_engine(1)/test/test.cpp" "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/test/CMakeFiles/test_.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "_deps/googletest-src/googletest/include"
-  "_deps/googletest-src/googletest"
+  "/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

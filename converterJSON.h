@@ -16,10 +16,10 @@ class ConverterJSON
 public:
     ConverterJSON() = default;
 
-    std::vector<std::string> GetTextDocuments();
-    std::vector<std::string> GetRequests();
-    int GetResponseLimits();
-    void PutAnswers(std::vector<std::vector<std::pair<int, float>>> answers);
+    static std::vector<std::string> GetTextDocuments();
+    static std::vector<std::string> GetRequests();
+    static int GetResponseLimits();
+    static void PutAnswers(std::vector<std::vector<std::pair<size_t, float>>>& answers);
 
 };
 

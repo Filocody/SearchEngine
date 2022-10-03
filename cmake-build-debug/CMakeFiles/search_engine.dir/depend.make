@@ -4,12 +4,17 @@
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: ../InvertedIndex.cpp
 CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj: ../InvertedIndex.h
 
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: ../InvertedIndex.h
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: ../SearchServer.cpp
+CMakeFiles/search_engine.dir/SearchServer.cpp.obj: ../SearchServer.h
+
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: ../nlohmann_json/single_include/nlohmann/json.hpp
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: ../converterJSON.cpp
 CMakeFiles/search_engine.dir/converterJSON.cpp.obj: ../converterJSON.h
 
 CMakeFiles/search_engine.dir/main.cpp.obj: ../nlohmann_json/single_include/nlohmann/json.hpp
 CMakeFiles/search_engine.dir/main.cpp.obj: ../InvertedIndex.h
+CMakeFiles/search_engine.dir/main.cpp.obj: ../SearchServer.h
 CMakeFiles/search_engine.dir/main.cpp.obj: ../converterJSON.h
 CMakeFiles/search_engine.dir/main.cpp.obj: ../main.cpp
 

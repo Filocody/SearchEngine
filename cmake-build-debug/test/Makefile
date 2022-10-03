@@ -66,37 +66,13 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine
+CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine(1)
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -108,16 +84,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -141,28 +107,16 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\test\\CMakeFiles\progress.marks
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\test\\CMakeFiles\progress.marks
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/clean
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -172,37 +126,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/preinstall
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/preinstall
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/hello_test.dir/rule:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/hello_test.dir/rule
-.PHONY : test/CMakeFiles/hello_test.dir/rule
-
-# Convenience name for target.
-hello_test: test/CMakeFiles/hello_test.dir/rule
-
-.PHONY : hello_test
-
-# fast build rule for target.
-hello_test/fast:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
-
-# Convenience name for target.
 test/CMakeFiles/index_test.dir/rule:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/index_test.dir/rule
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/index_test.dir/rule
 .PHONY : test/CMakeFiles/index_test.dir/rule
 
 # Convenience name for target.
@@ -212,12 +151,27 @@ index_test: test/CMakeFiles/index_test.dir/rule
 
 # fast build rule for target.
 index_test/fast:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/build
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/build
 .PHONY : index_test/fast
 
 # Convenience name for target.
+test/CMakeFiles/hello_test.dir/rule:
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/hello_test.dir/rule
+.PHONY : test/CMakeFiles/hello_test.dir/rule
+
+# Convenience name for target.
+hello_test: test/CMakeFiles/hello_test.dir/rule
+
+.PHONY : hello_test
+
+# fast build rule for target.
+hello_test/fast:
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/build
+.PHONY : hello_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_.dir/rule:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/test_.dir/rule
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/test_.dir/rule
 .PHONY : test/CMakeFiles/test_.dir/rule
 
 # Convenience name for target.
@@ -227,7 +181,7 @@ test_: test/CMakeFiles/test_.dir/rule
 
 # fast build rule for target.
 test_/fast:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/build
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/build
 .PHONY : test_/fast
 
 TestInvertedIndex.obj: TestInvertedIndex.cpp.obj
@@ -236,7 +190,7 @@ TestInvertedIndex.obj: TestInvertedIndex.cpp.obj
 
 # target to build an object file
 TestInvertedIndex.cpp.obj:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.obj
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.obj
 .PHONY : TestInvertedIndex.cpp.obj
 
 TestInvertedIndex.i: TestInvertedIndex.cpp.i
@@ -245,7 +199,7 @@ TestInvertedIndex.i: TestInvertedIndex.cpp.i
 
 # target to preprocess a source file
 TestInvertedIndex.cpp.i:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.i
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.i
 .PHONY : TestInvertedIndex.cpp.i
 
 TestInvertedIndex.s: TestInvertedIndex.cpp.s
@@ -254,7 +208,7 @@ TestInvertedIndex.s: TestInvertedIndex.cpp.s
 
 # target to generate assembly for a file
 TestInvertedIndex.cpp.s:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.s
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/TestInvertedIndex.cpp.s
 .PHONY : TestInvertedIndex.cpp.s
 
 __/InvertedIndex.obj: __/InvertedIndex.cpp.obj
@@ -263,7 +217,7 @@ __/InvertedIndex.obj: __/InvertedIndex.cpp.obj
 
 # target to build an object file
 __/InvertedIndex.cpp.obj:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.obj
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.obj
 .PHONY : __/InvertedIndex.cpp.obj
 
 __/InvertedIndex.i: __/InvertedIndex.cpp.i
@@ -272,7 +226,7 @@ __/InvertedIndex.i: __/InvertedIndex.cpp.i
 
 # target to preprocess a source file
 __/InvertedIndex.cpp.i:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.i
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.i
 .PHONY : __/InvertedIndex.cpp.i
 
 __/InvertedIndex.s: __/InvertedIndex.cpp.s
@@ -281,7 +235,7 @@ __/InvertedIndex.s: __/InvertedIndex.cpp.s
 
 # target to generate assembly for a file
 __/InvertedIndex.cpp.s:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.s
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/__/InvertedIndex.cpp.s
 .PHONY : __/InvertedIndex.cpp.s
 
 test.obj: test.cpp.obj
@@ -290,7 +244,7 @@ test.obj: test.cpp.obj
 
 # target to build an object file
 test.cpp.obj:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.obj
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.obj
 .PHONY : test.cpp.obj
 
 test.i: test.cpp.i
@@ -299,7 +253,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.i
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -308,7 +262,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.s
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\test_.dir\build.make test/CMakeFiles/test_.dir/test.cpp.s
 .PHONY : test.cpp.s
 
 test_test.obj: test_test.cpp.obj
@@ -317,7 +271,7 @@ test_test.obj: test_test.cpp.obj
 
 # target to build an object file
 test_test.cpp.obj:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.obj
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.obj
 .PHONY : test_test.cpp.obj
 
 test_test.i: test_test.cpp.i
@@ -326,7 +280,7 @@ test_test.i: test_test.cpp.i
 
 # target to preprocess a source file
 test_test.cpp.i:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.i
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.i
 .PHONY : test_test.cpp.i
 
 test_test.s: test_test.cpp.s
@@ -335,7 +289,7 @@ test_test.s: test_test.cpp.s
 
 # target to generate assembly for a file
 test_test.cpp.s:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.s
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/test_test.cpp.s
 .PHONY : test_test.cpp.s
 
 # Help Target
@@ -345,10 +299,6 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... hello_test
@@ -377,6 +327,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

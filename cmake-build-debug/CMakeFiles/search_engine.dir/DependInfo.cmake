@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/stigi/CLionProjects/search_engine/InvertedIndex.cpp" "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj"
-  "C:/Users/stigi/CLionProjects/search_engine/converterJSON.cpp" "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
-  "C:/Users/stigi/CLionProjects/search_engine/main.cpp" "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/CMakeFiles/search_engine.dir/main.cpp.obj"
+  "C:/Users/stigi/CLionProjects/search_engine(1)/InvertedIndex.cpp" "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj"
+  "C:/Users/stigi/CLionProjects/search_engine(1)/SearchServer.cpp" "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/CMakeFiles/search_engine.dir/SearchServer.cpp.obj"
+  "C:/Users/stigi/CLionProjects/search_engine(1)/converterJSON.cpp" "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/CMakeFiles/search_engine.dir/converterJSON.cpp.obj"
+  "C:/Users/stigi/CLionProjects/search_engine(1)/main.cpp" "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/CMakeFiles/search_engine.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,8 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "_deps/googletest-src/googletest/include"
-  "_deps/googletest-src/googletest"
+  "/include"
   "../nlohmann_json/single_include"
   )
 

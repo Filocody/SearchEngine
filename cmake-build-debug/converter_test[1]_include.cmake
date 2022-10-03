@@ -1,5 +1,5 @@
-if(EXISTS "C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test[1]_tests.cmake")
-  include("C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test[1]_tests.cmake")
+if(EXISTS "C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/converter_test[1]_tests.cmake")
+  include("C:/Users/stigi/CLionProjects/search_engine(1)/cmake-build-debug/converter_test[1]_tests.cmake")
 else()
   add_test(converter_test_NOT_BUILT converter_test_NOT_BUILT)
 endif()

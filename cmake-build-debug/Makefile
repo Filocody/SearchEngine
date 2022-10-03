@@ -66,37 +66,13 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine
+CMAKE_SOURCE_DIR = C:\Users\stigi\CLionProjects\search_engine(1)
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -131,33 +107,11 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stigi\CLionProjects\search_engine(1)\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -212,69 +166,17 @@ converter_test/fast:
 .PHONY : converter_test/fast
 
 #=============================================================================
-# Target rules for targets named gmock_main
+# Target rules for targets named search_test
 
 # Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
-.PHONY : gmock_main
+search_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 search_test
+.PHONY : search_test
 
 # fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named hello_test
-
-# Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello_test
-.PHONY : hello_test
-
-# fast build rule for target.
-hello_test/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+search_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/build
+.PHONY : search_test/fast
 
 #=============================================================================
 # Target rules for targets named index_test
@@ -288,6 +190,19 @@ index_test: cmake_check_build_system
 index_test/fast:
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\index_test.dir\build.make test/CMakeFiles/index_test.dir/build
 .PHONY : index_test/fast
+
+#=============================================================================
+# Target rules for targets named hello_test
+
+# Build rule for target.
+hello_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hello_test
+.PHONY : hello_test
+
+# fast build rule for target.
+hello_test/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\hello_test.dir\build.make test/CMakeFiles/hello_test.dir/build
+.PHONY : hello_test/fast
 
 #=============================================================================
 # Target rules for targets named test_
@@ -309,6 +224,7 @@ InvertedIndex.obj: InvertedIndex.cpp.obj
 # target to build an object file
 InvertedIndex.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/InvertedIndex.cpp.obj
 .PHONY : InvertedIndex.cpp.obj
 
 InvertedIndex.i: InvertedIndex.cpp.i
@@ -318,6 +234,7 @@ InvertedIndex.i: InvertedIndex.cpp.i
 # target to preprocess a source file
 InvertedIndex.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/InvertedIndex.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/InvertedIndex.cpp.i
 .PHONY : InvertedIndex.cpp.i
 
 InvertedIndex.s: InvertedIndex.cpp.s
@@ -327,7 +244,38 @@ InvertedIndex.s: InvertedIndex.cpp.s
 # target to generate assembly for a file
 InvertedIndex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/InvertedIndex.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/InvertedIndex.cpp.s
 .PHONY : InvertedIndex.cpp.s
+
+SearchServer.obj: SearchServer.cpp.obj
+
+.PHONY : SearchServer.obj
+
+# target to build an object file
+SearchServer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/SearchServer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/SearchServer.cpp.obj
+.PHONY : SearchServer.cpp.obj
+
+SearchServer.i: SearchServer.cpp.i
+
+.PHONY : SearchServer.i
+
+# target to preprocess a source file
+SearchServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/SearchServer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/SearchServer.cpp.i
+.PHONY : SearchServer.cpp.i
+
+SearchServer.s: SearchServer.cpp.s
+
+.PHONY : SearchServer.s
+
+# target to generate assembly for a file
+SearchServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_engine.dir\build.make CMakeFiles/search_engine.dir/SearchServer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/SearchServer.cpp.s
+.PHONY : SearchServer.cpp.s
 
 TestConverterJSON.obj: TestConverterJSON.cpp.obj
 
@@ -355,6 +303,33 @@ TestConverterJSON.s: TestConverterJSON.cpp.s
 TestConverterJSON.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\converter_test.dir\build.make CMakeFiles/converter_test.dir/TestConverterJSON.cpp.s
 .PHONY : TestConverterJSON.cpp.s
+
+TestSearchServer.obj: TestSearchServer.cpp.obj
+
+.PHONY : TestSearchServer.obj
+
+# target to build an object file
+TestSearchServer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/TestSearchServer.cpp.obj
+.PHONY : TestSearchServer.cpp.obj
+
+TestSearchServer.i: TestSearchServer.cpp.i
+
+.PHONY : TestSearchServer.i
+
+# target to preprocess a source file
+TestSearchServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/TestSearchServer.cpp.i
+.PHONY : TestSearchServer.cpp.i
+
+TestSearchServer.s: TestSearchServer.cpp.s
+
+.PHONY : TestSearchServer.s
+
+# target to generate assembly for a file
+TestSearchServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\search_test.dir\build.make CMakeFiles/search_test.dir/TestSearchServer.cpp.s
+.PHONY : TestSearchServer.cpp.s
 
 converterJSON.obj: converterJSON.cpp.obj
 
@@ -420,27 +395,26 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... converter_test
-	@echo ... gmock
-	@echo ... gmock_main
-	@echo ... gtest
-	@echo ... gtest_main
 	@echo ... hello_test
 	@echo ... index_test
 	@echo ... search_engine
+	@echo ... search_test
 	@echo ... test_
 	@echo ... InvertedIndex.obj
 	@echo ... InvertedIndex.i
 	@echo ... InvertedIndex.s
+	@echo ... SearchServer.obj
+	@echo ... SearchServer.i
+	@echo ... SearchServer.s
 	@echo ... TestConverterJSON.obj
 	@echo ... TestConverterJSON.i
 	@echo ... TestConverterJSON.s
+	@echo ... TestSearchServer.obj
+	@echo ... TestSearchServer.i
+	@echo ... TestSearchServer.s
 	@echo ... converterJSON.obj
 	@echo ... converterJSON.i
 	@echo ... converterJSON.s
