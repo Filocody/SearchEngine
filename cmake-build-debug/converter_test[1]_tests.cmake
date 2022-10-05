@@ -1,7 +1,0 @@
-add_test( TestConverterJSON.TestResponseLimits C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test.exe [==[--gtest_filter=TestConverterJSON.TestResponseLimits]==] --gtest_also_run_disabled_tests)
-set_tests_properties( TestConverterJSON.TestResponseLimits PROPERTIES WORKING_DIRECTORY C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( TestConverterJSON.TestTextDocuments C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test.exe [==[--gtest_filter=TestConverterJSON.TestTextDocuments]==] --gtest_also_run_disabled_tests)
-set_tests_properties( TestConverterJSON.TestTextDocuments PROPERTIES WORKING_DIRECTORY C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( TestConverterJSON.TestRequests C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug/converter_test.exe [==[--gtest_filter=TestConverterJSON.TestRequests]==] --gtest_also_run_disabled_tests)
-set_tests_properties( TestConverterJSON.TestRequests PROPERTIES WORKING_DIRECTORY C:/Users/stigi/CLionProjects/search_engine/cmake-build-debug SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( converter_test_TESTS TestConverterJSON.TestResponseLimits TestConverterJSON.TestTextDocuments TestConverterJSON.TestRequests)
