@@ -20,7 +20,10 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_subdirectory(nlohmann_json)
+include(FetchContent)
+
+FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz)
+FetchContent_MakeAvailable(json)
 
 add_executable(search_engine main.cpp converterJSON.cpp converterJSON.h InvertedIndex.cpp InvertedIndex.h SearchServer.cpp SearchServer.h)
 

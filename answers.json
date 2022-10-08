@@ -16,9 +16,7 @@
             "rank": 1.0
         },
         "request004": {
-            "result": true,
-            "doc_id": 0,
-            "rank": 1.0
+            "result": false
         }
     }
 }
