@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "converterJSON.h"
+#include "../converterJSON.h"
 
 auto* converter = new ConverterJSON();
 std::vector<std::string> texts = {
@@ -9,10 +9,10 @@ std::vector<std::string> texts = {
         "Coding is an extremely difficult activity"
 };
 std::vector<std::string> requests = {
-        "some words..",
-        "some words..",
-        "some words..",
-        "some words.."
+        "difficult",
+        "apple",
+        "text",
+        "weather"
 };
 std::vector<std::vector<std::pair<int, float>>> answers = {
         {{2,0.99},{1, 0.85},{3, 0.74}},

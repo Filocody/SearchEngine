@@ -16,24 +16,20 @@ set(gtest_disable_pthreads on)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 
-
+FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
 add_subdirectory(nlohmann_json)
 
 add_executable(search_engine main.cpp converterJSON.cpp converterJSON.h InvertedIndex.cpp InvertedIndex.h SearchServer.cpp SearchServer.h)
-add_executable(converter_test TestConverterJSON.cpp converterJSON.h converterJSON.cpp)
-add_executable(search_test TestSearchServer.cpp SearchServer.cpp SearchServer.h InvertedIndex.cpp InvertedIndex.h)
-
-include_directories(${gtest_SOURCE_DIR}/include)
 
 target_link_libraries(search_engine PRIVATE nlohmann_json::nlohmann_json)
-target_link_libraries(converter_test PRIVATE nlohmann_json::nlohmann_json gtest gtest_main )
-target_link_libraries(search_test PRIVATE gtest gtest_main)
+
+include_directories(${gtest_SOURCE_DIR}/include)
 
 add_subdirectory(test)
 
 include(GoogleTest)
-gtest_discover_tests(converter_test search_test)
+
 

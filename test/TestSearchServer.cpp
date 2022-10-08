@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
-#include "SearchServer.h"
-#include "InvertedIndex.h"
+#include "../SearchServer.h"
+#include "../InvertedIndex.h"
 #include "string"
 
 using namespace std;
